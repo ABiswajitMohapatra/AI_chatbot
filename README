@@ -1,76 +1,42 @@
-Chatbot Project
+# 🤖 AI Chatbot Project
 
-Overview
+## 📌 Overview
+This project is an AI-powered chatbot built using **Natural Language Processing (NLP)** and **Machine Learning** techniques. It understands and responds to user queries intelligently by leveraging a training dataset of intents and responses. The chatbot continuously improves through synonym expansion and custom training.
 
-This project is an AI-powered chatbot that uses Natural Language Processing (NLP) and Machine Learning techniques to understand and respond to user queries. The chatbot is trained on a dataset of intents and responses stored in a JSON file, improving accuracy through synonym expansion and enhanced training.
+---
 
-Features
+## ✨ Features
+- 🔍 **Intent Recognition**: Classifies user input based on predefined intents in a JSON file.
+- 🧠 **ML Model with TensorFlow/Keras**: Trained model (`model.h5`) provides accurate, real-time responses.
+- 🧩 **Synonym Expansion**: Enhances flexibility in understanding user queries.
+- 🧪 **Custom Training Pipeline**: Easily update and retrain the model as new intents are added.
+- 💬 **Interactive Interface (Optional)**: Can be integrated into a web or desktop UI for enhanced usability.
 
-Intent Recognition: Uses an intents JSON file to classify user queries.
+---
 
-Machine Learning Model: Trained with TensorFlow/Keras to provide intelligent responses.
+## 📁 Dataset
+The training data is structured in a JSON file:
+It includes:
+- `intents`: A list of objects containing:
+  - `tag`: Intent name
+  - `patterns`: Example user inputs
+  - `responses`: Predefined responses
 
-Synonym Expansion: Enhances understanding of diverse inputs.
+---
 
-Custom Training: Allows improvement over time with additional data.
+## 🛠️ Technologies Used
+- **Python 3**
+- **TensorFlow / Keras**
+- **NLTK (Natural Language Toolkit)**
+- **Scikit-learn**
+- **NumPy & Pandas**
+- **Jupyter Notebook / Google Colab** (for development)
 
-Interactive UI (Optional): Can be integrated with a frontend for better user interaction.
+---
 
-Installation
+## 🚀 Installation
 
-Clone the repository:
-
+1. **Clone the Repository**
+```bash
 git clone https://github.com/yourusername/chatbot-project.git
 cd chatbot-project
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Run the chatbot:
-
-python chatbot.py
-
-Dataset
-
-The chatbot is trained using an intents JSON file located at:
-
-D:\PROJECT\intents.json
-
-This file contains predefined intents, patterns, and responses.
-
-Model Training
-
-To train the model, execute:
-
-python train.py
-
-This will generate model.h5, which is used for predictions.
-
-Usage
-
-Run chatbot.py to start the chatbot.
-
-Enter queries and receive intelligent responses based on training.
-
-Modify intents.json to improve chatbot capabilities.
-
-Future Improvements
-
-Integrate LSTM for better NLP understanding
-
-Deploy as a web or mobile application
-
-Expand the dataset with more intents
-
-Contributing
-
-Feel free to fork this repository, make changes, and submit a pull request.
-
-License
-
-This project is licensed under the MIT License.
-
-Author
-
-Biswajit Mohapatra
